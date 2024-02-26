@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+nav.flex.z-40.w-full.h-auto.items-center.justify-center.data-\[menu-open\=true\]\:border-none.sticky.top-0.inset-x-0.backdrop-blur-lg.data-\[menu-open\=true\]\:backdrop-blur-xl.backdrop-saturate-150.bg-background\/70{
+  background-color: #23A73C !important;
+  color: white;
+}
+.figurecartel {
+  max-width: calc(100% - 40px); /* Ten en cuenta el margen */
+  margin: 20px;
+}
+
+.cartelimg {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Para evitar espacio adicional debajo de la imagen */
+}
