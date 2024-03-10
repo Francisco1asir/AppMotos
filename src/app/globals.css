@@ -26,7 +26,7 @@ body {
   }
 }
 nav.flex.z-40.w-full.h-auto.items-center.justify-center.data-\[menu-open\=true\]\:border-none.sticky.top-0.inset-x-0.backdrop-blur-lg.data-\[menu-open\=true\]\:backdrop-blur-xl.backdrop-saturate-150.bg-background\/70{
-  background-color: #23A73C !important;
+  background-color: #000000 !important;
   color: white;
 }
 .figurecartel {
@@ -41,5 +41,31 @@ nav.flex.z-40.w-full.h-auto.items-center.justify-center.data-\[menu-open\=true\]
 }
 
 .sct{
-  background-color: red;
+  background: rgb(126,0,0);
+background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba(16,0,0,1) 67%, rgba(161,0,0,1) 83%);
+}
+
+.tarjetilla {
+  height: 250px;
+}
+
+.tarjetilla:hover {
+  transform: translateX(25px);
+  transition: transform 8s ease-out;
+  filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.863));
+}
+
+.tarjetilla:not(:hover){
+  transition: transform 20s ease-out;
+}
+
+.logo {
+  margin-right: 200px;
+
+}
+
+.boton {
+  color: white;
+  background: rgb(255,0,0);
+  background: linear-gradient(347deg, rgb(30, 255, 0) 23%, rgba(0,0,0,1) 70%);
 }

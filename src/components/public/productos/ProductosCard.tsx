@@ -17,12 +17,12 @@ export const ProductosCard: FC<Props> = ({ productos }) => {
                 <CardBody className="overflow-visible h-48 py-2 flex flex-wrap justify-center items-center">
                     <Image
                         alt="Card background"
-                        className="object-cover rounded-xl max-h-44 transition-transform ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700"
+                        className=" tarjetilla "
                         src={productos.foto}
                     />
                 </CardBody>
                 <CardFooter className="pb-0 pt-2 px-4 h-10 flex-col items-center">
-                    <Button className="size-25 text-white bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+                    <Button className="boton">
                         Ver Detalle
                     </Button>
 

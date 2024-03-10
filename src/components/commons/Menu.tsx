@@ -19,7 +19,9 @@ export const Menu:FC<Props> = ({links}) => {
       que se traduce por paréntesis */}
       <NavbarBrand>
         {/* <AcmeLogo /> */}
-        <p className="font-bold text-inherit">ACME</p>
+        <p className="font-bold text-inherit">
+          <img className='logo' src="/Kalogo.png" alt="" />
+        </p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {

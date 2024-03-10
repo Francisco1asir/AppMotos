@@ -1,13 +1,24 @@
+import { ProductosCardList } from "@/components/public/productos/ProductosCardList";
+import { IProducto } from "@/interfaces/IProductos";
+import { getProductos } from "@/model/productos/dataproductos";
 import { Button } from "@nextui-org/button";
 
 
-export default function HomePage() {
+const PublicPage = async () => {
+
+  const productos: IProducto[] = await getProductos()
   return (
-    <div>
-      <figure className="figurecartel">
-      <img className="cartelimg" src="https://www.motociclismo.es/uploads/s1/78/72/96/2/fuel-las-mejores-motos-1920x1080.jpeg"></img>
-      </figure>
-      <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, minima quidem temporibus eum aut incidunt at ullam nesciunt voluptate quis non libero voluptas esse reiciendis quod facere suscipit fuga dicta!</h3>
-    </div>
-  );
+    <>
+      <section className='flex flex-col items-center'>
+        {/* <h2 className='text-4xl m-8'>Sección de Productos</h2> */}
+        <img src="https://kawa-go.kawasaki.es/storage/images/options/1-Cabecera_1920x810px.jpg" alt="" />
+        <ProductosCardList productos={productos}/>
+      </section>
+        
+    </>
+  )
 }
+
+
+
+export default PublicPage;

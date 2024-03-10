@@ -9,7 +9,8 @@ const ProductosPage = async () => {
   return (
     <>
       <section className='flex flex-col items-center'>
-        <h2 className='text-4xl m-8'>Sección de Productos</h2>
+        {/* <h2 className='text-4xl m-8'>Sección de Productos</h2> */}
+        <img src="/kawa.png" alt="" />
         <ProductosCardList productos={productos}/>
       </section>
         
