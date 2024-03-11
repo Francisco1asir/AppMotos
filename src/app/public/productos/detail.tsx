@@ -11,18 +11,18 @@ export const ProductoDetail:FC<Props> = ({ producto }) => {
 
     
     return(
-        <Card className="py-4 flex flex-row flex-nowrap">
-            <CardHeader className="pb-0 pt-2 px-4 basis-1/3">
+        <Card className="py-4 flex flex-row flex-wrap justify-center">
+            <CardHeader className="pb-0 pt-2 px-4 basis-3/3">
+                <h1>{ producto.marca }</h1>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2 basis-1/3">
+                <h2>{ producto.modelo }</h2>
                 <Image 
                     alt="Card background"
                     className="object-cover rounded-xl"
                     src={producto.foto}
                     width={270} 
                     />
-            </CardHeader>
-            <CardBody className="overflow-visible py-2 basis-1/3">
-                <h1>hola</h1>
-                <h2>{ producto.marca }</h2>
             </CardBody>
             <CardFooter>
                 <h3>{producto.precio}</h3>
