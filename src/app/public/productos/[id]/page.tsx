@@ -15,4 +15,4 @@ const ProductoPage = async ({ params: { id } }: { params: { id: string } }) => {
   )
 }
 
-export default ProductoPage
+export default ProductoPage

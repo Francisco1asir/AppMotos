@@ -11,7 +11,7 @@ const PublicPage = async () => {
     <>
       <section className='flex flex-col items-center'>
         {/* <h2 className='text-4xl m-8'>Sección de Productos</h2> */}
-        <img src="https://kawa-go.kawasaki.es/storage/images/options/1-Cabecera_1920x810px.jpg" alt="" />
+        <img src="/kawa.png" alt="" />
         <ProductosCardList productos={productos}/>
       </section>
         
