@@ -46,7 +46,8 @@ background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba
 }
 
 .tarjetilla {
-  height: 250px;
+  height: 100%;
+  width: 100%;
 }
 
 .tarjetilla:hover {
