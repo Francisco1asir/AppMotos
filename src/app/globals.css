@@ -70,3 +70,10 @@ background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba
   background: rgb(255,0,0);
   background: linear-gradient(347deg, rgb(30, 255, 0) 23%, rgba(0,0,0,1) 70%);
 }
+.checkboxs{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+

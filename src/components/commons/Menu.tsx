@@ -20,7 +20,9 @@ export const Menu:FC<Props> = ({links}) => {
       <NavbarBrand>
         {/* <AcmeLogo /> */}
         <p className="font-bold text-inherit">
+        <Link color="foreground" href="/public">
           <img className='logo' src="/Kalogo.png" alt="" />
+        </Link>
         </p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -36,7 +38,7 @@ export const Menu:FC<Props> = ({links}) => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/auth/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
