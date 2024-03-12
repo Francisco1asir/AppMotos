@@ -47,62 +47,62 @@ export const ProductosCardList: FC<Props> = ({ productos }) => {
   return (
     <section className="flex flex-row flex-wrap sct">
       <div className="checkboxs">
-      <label>
-        <input
-          type="checkbox"
-          checked={mostrarSoloKawasaki}
-          onChange={() => handleCheckboxChange('Kawasaki', setMostrarSoloKawasaki)}
-        />
-       Kawasaki
-      </label>
+        <label>
+          <div className="form-group">
+            <input type="checkbox" id="html" checked={mostrarSoloKawasaki}
+              onChange={() => handleCheckboxChange('Kawasaki', setMostrarSoloKawasaki)}
+            ></input>
+            <label htmlFor="html">Kawasaki</label>
+          </div>  
+        </label>
 
-      <label>
-        <input
-          type="checkbox"
-          checked={mostrarSoloYamaha}
-          onChange={() => handleCheckboxChange('Yamaha', setMostrarSoloYamaha)}
-        />
-        Yamaha
-      </label>
+        <label>
+          <div className="form-group">
+            <input type="checkbox" id="html2" checked={mostrarSoloYamaha}
+              onChange={() => handleCheckboxChange('Yamaha', setMostrarSoloYamaha)}
+            ></input>
+            <label htmlFor="html2">Yamaha</label>
+          </div>  
+        </label>
 
-      <label>
-        <input
-          type="checkbox"
-          checked={mostrarSoloDucati}
-          onChange={() => handleCheckboxChange('Ducati', setMostrarSoloDucati)}
-        />
-       Ducati
-      </label>
+        <label>
+          <div className="form-group">
+            <input type="checkbox" id="html3" checked={mostrarSoloDucati}
+              onChange={() => handleCheckboxChange('Ducati', setMostrarSoloDucati)}
+            ></input>
+            <label htmlFor="html3">Ducati</label>
+          </div>  
+        </label>
 
-      <label>
-        <input
-          type="checkbox"
-          checked={mostrarSoloBMW}
-          onChange={() => handleCheckboxChange('BMW', setMostrarSoloBMW)}
-        />
-       BMW
-      </label>
+        <label>
+          <div className="form-group">
+            <input type="checkbox" id="html4" checked={mostrarSoloBMW}
+              onChange={() => handleCheckboxChange('BMW', setMostrarSoloBMW)}
+            ></input>
+            <label htmlFor="html4">BMW</label>
+          </div>  
+        </label>
 
-      <label>
-        <input
-          type="checkbox"
-          checked={mostrarSoloHonda}
-          onChange={() => handleCheckboxChange('Honda', setMostrarSoloHonda)}
-        />
-       Honda
-      </label>
+        <label>
+          <div className="form-group">
+            <input type="checkbox" id="html5" checked={mostrarSoloHonda}
+              onChange={() => handleCheckboxChange('Honda', setMostrarSoloHonda)}
+            ></input>
+            <label htmlFor="html5">Honda</label>
+          </div>  
+        </label>
 
-      <label>
-        <input
-          type="checkbox"
-          checked={mostrarSoloSuzuki}
-          onChange={() => handleCheckboxChange('Suzuki', setMostrarSoloSuzuki)}
-        />
-       Suzuki
-      </label>
+        <label>
+          <div className="form-group">
+            <input type="checkbox" id="html6" checked={mostrarSoloSuzuki}
+              onChange={() => handleCheckboxChange('BMW', setMostrarSoloSuzuki)}
+            ></input>
+            <label htmlFor="html6">Suzuki</label>
+          </div>  
+        </label>
       </div>
 
-
+      {/* <div className="listado"> */}
       {productosFiltrados.map((producto) => (
         <article key={producto.matricula} className="basis-1/4 p-2">
           <Link href={`/public/productos/${producto.matricula}`}>
@@ -110,6 +110,7 @@ export const ProductosCardList: FC<Props> = ({ productos }) => {
           </Link>
         </article>
       ))}
+      {/* </div> */}
     </section>
   );
 };
