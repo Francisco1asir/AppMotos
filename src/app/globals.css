@@ -17,7 +17,7 @@
 }
 
 body {
-
+  background-color: #000000;
 }
 
 @layer utilities {
@@ -180,15 +180,25 @@ background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba
 }
 
 .loginpagina {
-  background-image: url("https://i.pinimg.com/originals/ef/3c/7f/ef3c7f1569c3a6f7e294218608b73d37.jpg") ;
-  background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
-    background-position: center; /* Centra la imagen dentro de la sección */
-    background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/564x/33/9c/1d/339c1ddafadec3665f3fc7417f46f9f0.jpg") ;
+  /* background-size: cover; 
+  background-position: center; */
+  background-repeat: no-repeat;
 }
 
 .formulogin {
+  background-image: url("https://i.pinimg.com/564x/aa/b5/a0/aab5a04a6b377b33b9bddeb76a393f95.jpg") ;
   background-color: rgba(255, 255, 255, 0.397); /* Fondo del formulario con opacidad */
   border-radius: 10px; /* Esquinas redondeadas */
   padding: 20px; /* Espacio interno */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  filter: blur(2);
+  color: white;
+}
+
+.fondocontainer {
+  background-color: #000000;
 }
