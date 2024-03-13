@@ -12,3 +12,24 @@ export interface IProducto {
     dni_propietario: string;
     catid:           string;
 }
+
+export interface IColumn {
+    key: string;
+    label: string;
+}
+
+const ColumProducto:IColumn[] = [
+    {
+        key: "matricula",
+        label: "MATRICULA",
+    },
+    {
+        key: "marc",
+        label: "MARCA",
+    },{
+        key: "modelo",
+        label: "MODELO",
+    }
+]
+
+export default ColumProducto

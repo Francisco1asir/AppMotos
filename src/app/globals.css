@@ -153,3 +153,42 @@ background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
+.mainlogin {
+  background-color: red;
+  /* background-image: url("https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/10/27074253/Kawasaki-Motorcycle-Facts-Cover-271020211230.jpg") ; */
+}
+
+
+.button-circle {
+  width: 40px; /* Ajusta el ancho del botón */
+  height: 40px; /* Ajusta la altura del botón */
+  border-radius: 50%; /* Establece el radio de borde para hacer un círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #10B981; /* Cambia al color verde deseado */
+  border: none;
+}
+
+.button-circle svg {
+  fill: white; /* Color de relleno del SVG */
+  width: 60%; /* Ajusta el tamaño del SVG dentro del botón */
+  height: 60%; /* Ajusta el tamaño del SVG dentro del botón */
+}
+
+.loginpagina {
+  background-image: url("https://i.pinimg.com/originals/ef/3c/7f/ef3c7f1569c3a6f7e294218608b73d37.jpg") ;
+  background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen dentro de la sección */
+    background-repeat: no-repeat;
+}
+
+.formulogin {
+  background-color: rgba(255, 255, 255, 0.397); /* Fondo del formulario con opacidad */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Espacio interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

@@ -7,6 +7,7 @@ import { ILink } from "@/interfaces/iLinks";
 export default function AdminLayout({children}: IChildren){
 
     const links:ILink[] = [
+        {name: 'Tabla', href: '/admin'},
         {name: 'Insertar', href: '/admin/insertar'},
         {name: 'Borrar', href: '/admin/borrar'},
         {name: 'Actualizar', href: '/admin/actualizar'},
@@ -17,7 +18,6 @@ export default function AdminLayout({children}: IChildren){
     return (
         <>
             <header>
-                <h1>Header del Backend</h1>
                 <Menu links= {links} />
             </header>
             <main>

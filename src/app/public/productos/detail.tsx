@@ -21,7 +21,7 @@ export const ProductoDetail:FC<Props> = ({ producto }) => {
                     alt="Card background"
                     className="object-cover rounded-xl"
                     src={producto.foto}
-                    width={270} 
+                    width={370} 
                     />
             </CardBody>
             <CardFooter>

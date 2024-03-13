@@ -1,16 +1,16 @@
 import { Menu } from '@/components/commons/Menu';
-import { IChildren } from '@/interfaces/IChildren';
-import { ILink } from '../../interfaces/ILinks';
+import { IChildren } from '@/interfaces/iChildren';
+
 
 
 export default function AuthLayout({children}: IChildren){
    
     return (
         <>
-            <header className='bg-orange-300'>
+            <header className='bg-black text-white'>
                <h2>Zona de Autencticacion</h2>
             </header>
-            <main className='container mx-auto'>
+            <main className='bg-black container mx-auto '>
                 { children }
             </main>
         </>

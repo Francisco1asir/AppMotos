@@ -1,12 +1,14 @@
-"use client"
 
-import { Button } from "@nextui-org/react";
+import { AdminTable } from "@/components/commons/tabla/tabla";
+import apiProductos from "@/model/productos/apiProductos";
 
-export default function HomePage() {
+const BackendPage = async () => { 
+  const productos = await apiProductos.listar();
     return (
-      <div>
-        <Button>Backend</Button>
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, minima quidem temporibus eum aut incidunt at ullam nesciunt voluptate quis non libero voluptas esse reiciendis quod facere suscipit fuga dicta!</h3>
-      </div>
-    );
+      <>
+        <AdminTable productos={productos}/>
+      </>
+    )
   }
+
+export default BackendPage;
