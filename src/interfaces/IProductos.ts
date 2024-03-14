@@ -10,7 +10,7 @@ export interface IProducto {
     peso:            number;
     precio:          number;
     dni_propietario: string;
-    catid:           string;
+    catid:          ICategoria;
 }
 
 export interface IColumn {

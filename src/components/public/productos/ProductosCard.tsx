@@ -12,7 +12,7 @@ export const ProductosCard: FC<Props> = ({ productos }) => {
             <Card className="py-4 min-h-72 max-h-80 bg-[url(https://www.publicdomainpictures.net/pictures/40000/nahled/abstract-green-background-1361187771Euk.jpg)]">
                 <CardHeader className="pb-0 pt-2 px-4 h-10 flex-col items-start">
                     <h2 className="font-bold text-xl text-white">{productos.marca}</h2>
-                    <h2 className="font-bold text-xl text-white">{productos.precio}</h2>
+                    <h2 className="font-bold text-xl text-white">{productos.catid.nombre}</h2>
                     <h6 className="font-bold text-sm text-white">{productos.modelo}</h6>
                 </CardHeader>
                 <CardBody className="overflow-visible h-48 py-2 flex flex-wrap justify-center items-center">
