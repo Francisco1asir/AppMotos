@@ -4,29 +4,29 @@ import { FC } from 'react';
 
 
 interface Props {
-  producto: IProducto;
+    producto: IProducto;
 }
 
-export const ProductoDetail:FC<Props> = ({ producto }) => {
+export const ProductoDetail: FC<Props> = ({ producto }) => {
 
-    
-    return(
-        <Card className="py-4 flex flex-row flex-wrap flex justify-center">
-            <CardHeader className="pb-0 pt-2 px-4 basis-3/3 flex justify-center">
-                <h1>{ producto.marca }</h1>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2 basis-1/3">
-                <h2>{ producto.modelo }</h2>
-                <Image 
+
+    return (
+        <section className="product-section">
+            <div className="product-details">
+                <h1 className="product-title">{producto.marca}</h1>
+                <h2 className="product-model">{producto.modelo}</h2>
+                {/* <p className="product-description">{producto.descripcion}</p> */}
+                <h3 className="product-price">{producto.precio}</h3>
+                <button className="buy-now-btn">Comprar ahora</button>
+            </div>
+            <div className="product-image">
+                <Image
                     alt="Card background"
-                    className="object-cover rounded-xl"
+                    className=" tarjetilla "
                     src={producto.foto}
-                    width={370} 
-                    />
-            </CardBody>
-            <CardFooter>
-                <h3>{producto.precio}</h3>
-            </CardFooter>
-        </Card>
+                />
+            </div>
+        </section>
+
     )
 }

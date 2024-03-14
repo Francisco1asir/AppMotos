@@ -10,7 +10,6 @@ const ProductoPage = async ({ params: { id } }: { params: { id: string } }) => {
   return (
     <section className="container mx-auto px-4 mt-6 border min-h-screen">
         <ProductoDetail producto={producto} />
-        <h1>Detalle de la moto ${id}</h1>
     </section>
   )
 }

@@ -202,3 +202,85 @@ background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba
 .fondocontainer {
   background-color: #000000;
 }
+
+.formularioadd {
+ 
+  height: 500px;
+  width: 800px;
+
+}
+
+/* .formmm {
+  display: flex;
+}
+
+.formuflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+} */
+
+.product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.product-details {
+  flex: 0 0 50%;
+  padding: 0 20px;
+}
+
+.product-title {
+  font-size: 36px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.product-model {
+  font-size: 24px;
+  margin: 0 0 20px;
+  color: #666;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.product-price {
+  font-size: 30px;
+  margin: 0 0 30px;
+  color: #333;
+}
+
+.buy-now-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #0056b3;
+}
+
+.product-image {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
