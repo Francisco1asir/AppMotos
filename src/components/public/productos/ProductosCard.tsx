@@ -9,7 +9,7 @@ interface Props {
 export const ProductosCard: FC<Props> = ({ productos }) => {
     return (
         <section className='sct'>
-            <Card className="py-4 min-h-72 max-h-80 bg-[url(https://www.publicdomainpictures.net/pictures/40000/nahled/abstract-green-background-1361187771Euk.jpg)]">
+            <Card className="tarjet py-4 min-h-72 max-h-80">
                 <CardHeader className="pb-0 pt-2 px-4 h-10 flex-col items-start">
                     <h2 className="font-bold text-xl text-white">{productos.marca}</h2>
                     <h2 className="font-bold text-xl text-white">{productos.catid.nombre}</h2>

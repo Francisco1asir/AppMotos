@@ -45,20 +45,6 @@ nav.flex.z-40.w-full.h-auto.items-center.justify-center.data-\[menu-open\=true\]
 background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba(16,0,0,1) 67%, rgba(161,0,0,1) 83%);
 }
 
-.tarjetilla {
-  height: 100%;
-  width: 100%;
-}
-
-.tarjetilla:hover {
-  transform: translateX(25px);
-  transition: transform 8s ease-out;
-  filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.863));
-}
-
-.tarjetilla:not(:hover){
-  transition: transform 20s ease-out;
-}
 
 .logo {
   margin-right: 200px;
@@ -283,4 +269,43 @@ background: linear-gradient(347deg, rgba(126,0,0,1) 23%, rgba(0,0,0,1) 40%, rgba
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.formumoto {
+  background-image: url("https://i.pinimg.com/564x/cc/63/7f/cc637f61a531dd0216ea8ed7beb89d59.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+.formumoto2 {
+  background-color: #000000;
+  color: white;
+}
+
+.inputmoto {
+  color: white;
+}
+
+
+.tarjetilla {
+  height: 85%;
+  width: 85%;
+}
+
+.tarjetilla:hover {
+  transform: translateX(25px);
+  transition: transform 8s ease-out;
+  filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.863));
+}
+
+.tarjetilla:not(:hover){
+  transition: transform 20s ease-out;
+}
+
+.tarjet {
+  background-image: url("https://i.pinimg.com/564x/e7/6d/0d/e76d0d1f1298ad00479c28293a297454.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
 }
